@@ -71,50 +71,6 @@ class Teacher extends Database {
         echo "Mot de passe mis à jour !";
     }
 
-
-    /*public function studentAdd(){
-        $addStudentQuery = "INSERT INTO `eleves` (`nom`, `prenom`, `niveau_scolaire`, `date_naissance`, `handicap`) VALUES (:nom, :prenom, :niveau_scolaire, :date_naissance, :handicap)";
-        
-        $stmt = $this->db->prepare($addStudentQuery);
-
-        $stmt->bindValue(":nom", $this->studentLastname, PDO::PARAM_STR);
-        $stmt->bindValue(":prenom", $this->studentFirstname, PDO::PARAM_STR);
-        $stmt->bindValue(":niveau_scolaire", $this->studentLevel, PDO::PARAM_STR);
-        $stmt->bindValue(":date_naissance", $this->studentBirthdate, PDO::PARAM_STR);
-        $stmt->bindValue(":handicap", $this->studentHandicap, PDO::PARAM_STR);
-
-        $stmt->execute();
-
-        echo ($this->studentFirstname." ".$this->studentLastname." a été ajouté !");
-    }
-
-    public function studentListA(){
-        $listQuery = "SELECT * FROM `eleves` WHERE niveau_scolaire='CP' OR niveau_scolaire='CE1'";
-        $stmt = $this->db->prepare($listQuery);
-        $stmt->execute();
-
-        $resultsA = $stmt->fetchAll(PDO::FETCH_ASSOC);
-   
-        return $resultsA;
-    }
-
-
-    public function studentDelete(){
-        $titleQuery = "SELECT prenom FROM eleves WHERE id = :id";
-        $stmt = $this->db->prepare($titleQuery);
-        $stmt->bindValue(":id", $this->id, PDO::PARAM_INT);
-        $stmt->execute();
-
-        $student = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        echo '"'.$student[0]['prenom'].'" a été retiré de la base de données';
-
-        $deleteQuery = "DELETE FROM `eleves` WHERE `id` = :id";
-        $stmt = $this->db->prepare($deleteQuery);
-        $stmt->bindValue(":id", $this->id, PDO::PARAM_INT);
-        $stmt->execute();
-
-    }
-    */
     public function teacherUpdate(){
         $updateQuery = "UPDATE `enseignants` SET `password` = :password WHERE `email` = :email";
         $stmt = $this->db->prepare($updateQuery);
