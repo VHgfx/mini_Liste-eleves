@@ -1,0 +1,374 @@
+@font-face {
+	font-family: "TT Slabs Regular";
+	src: url('TT-Slabs-Regular.otf')  format('truetype');
+}
+
+#login-page{
+
+}
+
+#headbar{
+    width : 100%;
+    height : 8%;
+    background-color: #AA7153;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body{
+    background-color: #fcf6ef;
+    font-family: 'TT Slabs Regular', serif;
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+#sidebar{
+    width : 15%;
+    height: 92%;
+    background-color: #F2E6DE;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-button{
+    color: #64554D;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.sidebar-button:hover{
+    font-weight:1000;
+}
+
+#bottom-sidebar{
+    margin-top: auto; 
+    background-color: #64554D;
+}
+
+.bottom-button {
+    margin: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bottom-button:hover {
+    font-weight: 1000;
+}
+
+#content{
+    width : 85%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    padding: auto;
+}
+
+thead{
+    background-color: #AFBED3;
+}
+
+th, td{
+    padding: 5px;
+    white-space: nowrap;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: #AFBED3; 
+}
+
+tr:nth-child(odd) td {
+    background-color: #ffffff; 
+}
+
+.classe-composition{
+    width: 100%;
+}
+
+.classe-composition table{
+    font-size:12px;
+    width: 100%;
+    
+}
+
+h1{
+    font-weight: 1000;
+}
+
+#list{
+    color: #102747;
+    width: 85%;
+    height: 92%;
+    overflow: auto;
+    margin: auto;
+}
+
+.classroom{
+    margin-top: 15px;
+}
+
+.classroom h2{
+    background-color: #102747;
+    color: white;
+    padding: 5px 8px 5px 8px; 
+    margin: 0px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.classroom .button {
+    
+    float: right;
+    font-family: 'TT Slabs Regular', serif;
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    line-height: 20px; 
+    padding: 8px; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: #102747; 
+    display: inline-block;
+}
+
+.classroom .button:hover {
+    background: #395884; 
+}
+
+
+#content-addStudent{
+    color: #327B68;
+    width : 85%;
+    height: 92%;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 8%;
+    left: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+#content-addStudent h2{
+    background-color: #02CF99;
+    color: white;
+    padding: 5px 8px 5px 8px; 
+    margin: 0px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#addStudent-form input[type=submit] {
+    font-family: 'TT Slabs Regular', serif;
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    line-height: 20px; 
+    padding: 8px; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: #02CF99; 
+    display: inline-block;
+}
+
+#addStudent-form input[type=submit]:hover {
+    background: #115c48; 
+}
+
+#addStudent-form tr:nth-child(even) td {
+    background-color: #ffffff; 
+}
+
+#editStudent-form input[type=submit] {
+    font-family: 'TT Slabs Regular', serif;
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    line-height: 20px; 
+    padding: 8px; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: #02CF99; 
+    display: inline-block;
+}
+
+#editStudent-form input[type=submit]:hover {
+    background: #115c48; 
+}
+
+#editStudent-form tr:nth-child(even) td {
+    background-color: #ffffff; 
+}
+
+#content-profile{
+    color: #AA7153;
+    width : 85%;
+    height: 92%;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 8%;
+    left: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+#content-profile h2{
+    background-color: #AA7153;
+    color: white;
+    padding: 5px 8px 5px 8px; 
+    margin: 0px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#profile-form input[type=submit] {
+    font-family: 'TT Slabs Regular', serif;
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    line-height: 20px; 
+    padding: 8px; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: #AA7153; 
+    display: inline-block;
+}
+
+#profile-form input[type=submit]:hover {
+    background: #d39574; 
+}
+
+#profile tr:nth-child(even) td {
+    background-color: #ffffff; 
+}
+
+.profile-info {
+    font-weight: 1000; 
+}
+
+#content-editStudent{
+    color: #327B68;
+    width : 85%;
+    height: 92%;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 8%;
+    left: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+
+#content-editStudent h2{
+    background-color: #02CF99;
+    color: white;
+    padding: 5px 8px 5px 8px; 
+    margin: 0px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.button {
+    
+    float: right;
+    font-family: 'TT Slabs Regular', serif;
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    line-height: 20px; 
+    padding: 8px; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: #102747; 
+    display: inline-block;
+}
+
+.button:hover {
+    background: #395884; 
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+#login-page {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#login-page input[type=submit] {
+    font-family: 'TT Slabs Regular', serif;
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    line-height: 20px; 
+    padding: 8px; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: #02CF99; 
+    display: inline-block;
+}
+
+#login-page input[type=submit]:hover {
+    background: #115c48; 
+}
+
+
+
+.bottom-button input[type=submit] {
+    font-family: 'TT Slabs Regular', serif;
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    line-height: 20px; 
+    padding: 8px; 
+    margin:auto;
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-color: #AA7153; 
+}
+
+.bottom-button input[type=submit]:hover {
+    background: #7a4c33; 
+}
+
+input[type="image"] {
+    width: 25px; /* Fill the container width */
+    height: auto; /* Maintain aspect ratio */
+}
