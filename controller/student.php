@@ -2,12 +2,22 @@
 require_once(__DIR__.'/../config/db.php');
 require_once(__DIR__."/../model/student.php");
 
+
+require(__DIR__.'/../vendor/autoload.php');
+
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
+
+
 class StudentCtrl extends Database {
-    public function studentAdd(){
+    
+    public function studentAdd($client){
+        
         $error = false;
 
         if (count($_POST) > 0){
             $student = new Student();
+            
 
             if (!empty($_POST['prenom'])){
                 if (preg_match("/^[- '\p{L}]+$/u", $_POST["prenom"])){
@@ -63,7 +73,7 @@ class StudentCtrl extends Database {
                     </script>';
                 } else {
                     if($error == false){
-                        $student->studentAdd();
+                        $student->studentAdd($client);
                     }
                 }
             }         

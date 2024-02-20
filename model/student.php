@@ -2,6 +2,22 @@
 
 require_once(__DIR__.'/../config/db.php');
 
+require(__DIR__.'/../vendor/autoload.php');
+
+/*use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
+
+define('DEBUG', true);
+
+$caBundlePath = 'C:/wamp64/bin/php/php8.2.13/extras/ssl/cacert.pem';
+
+$client = new GuzzleHttp\Client([
+    'base_uri' => 'https://localhost:1234/',
+    'verify'   =>  $caBundlePath,
+
+]);*/
+
+
 class Student extends Database {
     public $id;
     public $studentFirstname;
@@ -12,6 +28,30 @@ class Student extends Database {
     public $studentHandicap;
 
 
+    /* Essai API
+    public function studentAdd($client){
+        $apiQuery = [
+            'nom' => $this->studentLastname,
+            'prenom' => $this->studentFirstname,
+            'niveau_scolaire' => $this->studentLevel,
+            'date_naissance' => $this->studentBirthdate,
+            'handicap' => $this->studentHandicap
+        ];
+
+        try {
+            $response = $client->request('POST', 'addStudent', [
+                'json' => $apiQuery
+            ]);
+    
+            $body = $response->getBody();
+
+            $data = json_decode($body, true);
+        } catch (RequestException $e) {
+            echo 'Erreur de communication avec le serveur';
+        }
+    }*/
+
+    // OG function
     public function studentAdd(){
         $addStudentQuery = "INSERT INTO `eleves` (`nom`, `prenom`, `niveau_scolaire`, `date_naissance`, `handicap`) VALUES (:nom, :prenom, :niveau_scolaire, :date_naissance, :handicap)";
         

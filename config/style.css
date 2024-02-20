@@ -3,9 +3,6 @@
 	src: url('TT-Slabs-Regular.otf')  format('truetype');
 }
 
-#login-page{
-
-}
 
 #headbar{
     width : 100%;
@@ -130,7 +127,6 @@ h1{
 }
 
 .classroom .button {
-    
     float: right;
     font-family: 'TT Slabs Regular', serif;
     color: rgb(255, 255, 255); 

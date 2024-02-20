@@ -2,6 +2,7 @@
 require_once(__DIR__.'/../config/db.php');
 require_once(__DIR__."/../model/teacher.php");
 
+
 class TeacherCtrl extends Database {
     public function teacherLogin(){
         $error = false;
