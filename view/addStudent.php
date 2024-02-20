@@ -30,7 +30,7 @@ require_once(__DIR__."/../controller/student.php");
         <?php
             $studentCtrl = new StudentCtrl();
             if(isset($_POST['isSendAddStudent'])){
-                $studentCtrl->studentAdd($client);
+                $studentCtrl->studentAdd();
             } 
         ?>
         <h1>Ajouter un élève</h1>

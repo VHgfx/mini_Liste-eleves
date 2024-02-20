@@ -11,7 +11,7 @@ use GuzzleHttp\Exception\RequestException;
 
 class StudentCtrl extends Database {
     
-    public function studentAdd($client){
+    public function studentAdd(){
         
         $error = false;
 
@@ -73,7 +73,7 @@ class StudentCtrl extends Database {
                     </script>';
                 } else {
                     if($error == false){
-                        $student->studentAdd($client);
+                        $student->studentAdd();
                     }
                 }
             }         
